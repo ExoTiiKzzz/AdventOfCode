@@ -8,9 +8,6 @@ def getLineTotal(numbers):
     elif len(numbers) == 1:
         # concatenate number with himself
         return int(str(numbers[0]) + str(numbers[0]))
-    elif len(numbers) == 2:
-        # concatenate numbers
-        return int(str(numbers[0]) + str(numbers[1]))
     else:
         # return concatenation of first and last number
         return int(str(numbers[0]) + str(numbers[-1]))

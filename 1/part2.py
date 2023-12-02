@@ -47,10 +47,8 @@ def get_line_numbers(line):
         start_index = 0
         while search_for_number(line, digit, start_index) != -1:
             start_index = search_for_number(line, digit, start_index)
-            end_index = start_index + len(str(digit)) - 1
             digit_indexes.append({
                 'start': start_index,
-                'end': end_index,
                 'number': digit
             })
             start_index += 1
@@ -62,10 +60,8 @@ def get_line_numbers(line):
         start_index = 0
         while search_for_number(line, number, start_index) != -1:
             start_index = search_for_number(line, number, start_index)
-            end_index = start_index + len(number) - 1
             number_indexes.append({
                 'start': start_index,
-                'end': end_index,
                 'number': numbersDict[number]
             })
             start_index += 1
