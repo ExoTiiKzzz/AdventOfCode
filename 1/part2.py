@@ -95,4 +95,4 @@ for line in input:
     lineTotal = get_line_total(numbers)
     total += lineTotal
 
-print('Total should be 54019 (found:', total, ')')
+print('Total:', total)
